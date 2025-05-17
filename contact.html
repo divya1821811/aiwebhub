@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" type="text/javascript"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({ publicKey:"T60tivE7Zw8XA_VsZ"});
+   })();
+</script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-30XRQB3X03"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-30XRQB3X03');
+</script>
+<body>
+    <!--<div class="emai">
+    <div class="container">
+        <div class="contact-form">
+            <h3>Contact</h3>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                <button type="submit"onclick="sendEmail()">Send</button>
+            </form>
+            
+        </div>
+        
+        <div class="image-container">
+            <img src="contact.jpeg" alt="Contact Us Image">
+        </div>
+    </div>
+</div>--><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <section>
+        <div class="contact-container">
+            <!-- Left-side contact form -->
+            <div class="form-container">
+                <h2>Contact</h2>
+                <form id="contactForm">
+                    <div class="input-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                        <span class="error" id="nameError">Name is required</span>
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <span class="error" id="emailError">Email is required</span>
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" placeholder="Enter your message"></textarea>
+                        <span class="error" id="messageError">Message is required</span>
+                    </div>
+    
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
+            </div>
+    
+            <!-- Right-side image display -->
+            <div class="image-container">
+                <iframe src="https://lottie.host/embed/2a4ce568-5dec-42ba-bb65-7ccb877d698f/2FjDaMzdZe.lottie"></iframe>
+            </div>
+        </div>
+    </section>
+        <script src="contact.js"></script>
+    
+    </body>
+    </html>
+    
+    
+</body>
+</html>
